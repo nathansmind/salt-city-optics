@@ -1,0 +1,163 @@
+// Pages
+
+// Table of Contents
+//
+// Style Guide
+
+
+
+
+//
+// Style Guide
+//
+
+.page-intro {
+	height: 100vh;
+	background: #364266;
+	text-align: center;
+	img {
+		width: 150px;
+		margin-bottom: 10px;
+	}
+}
+#style-guide {
+	.sg-header {
+		margin-bottom: 20px;
+		margin-top: 40px;
+		border-bottom: 1px solid $gray-500;
+	}
+	.icons i {
+		font-size: 24px;
+		margin-bottom: 20px;
+		text-align: center;
+		color: $gray-800;
+	}
+	.color {height: 60px;}
+	.colors {
+		.row {
+			margin-bottom: 40px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+//
+// Home
+//
+
+.main-banner {
+	height: calc(100vh - 118px);
+	background: center center;
+	background-size: cover;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.well {
+	height: 50vh;
+	background: center center;
+	background-size: cover;
+	width: 100%;
+}
+
+
+//
+// Header
+//
+nav .form-inline {
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+	left: 0;
+	padding-right: 208px;
+	padding-left: 717px;
+	input {
+		width: 100% !important;
+		
+	}
+}
+.navbar-light .navbar-toggler {border-color: rgba(0, 0, 0, 0);}
+.right-nav {
+	a {padding-top: 14px;}
+}
+.cart-btn {
+	color: $gray-700;
+}
+.global-promo {
+	&.dark {
+		background-color: $gray-700; 
+		a {color: $white;}
+	}
+	a {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+}
+
+//
+// Footer
+//
+
+footer {
+	background: $gray-100;
+	padding: 40px;
+	margin-top: 40px;
+	h5 {
+		margin-left: -15px;
+	}
+	.social {
+		list-style: none;
+		padding-left: 0;
+		h5 {margin-left: 0;}
+		span {font-size: 26px; color: $gray-800; margin-right: 10px;}
+		a:hover {text-decoration: none;}
+		li {float: left;}
+	}
+}
+
+//
+// media Queries
+//
+
+.hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down {display: none;}
+.hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up {display: inherit;}
+.navbar-brand {margin-right: 0;}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	.hidden-sm-down {display: inherit;}
+	.hidden-sm-up {display: none;}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  
+	.hidden-md-down {display: inherit;}
+	.hidden-md-up {display: none;}
+	
+	.navbar-brand {margin-right: 1rem;}
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  
+	.hidden-lg-down {display: inherit;}
+	.hidden-lg-up {display: none;}
+	.right-nav {width: 180px;}
+	.dropdown-toggle {
+		margin-right: 20px;
+		&::after {display: none;}
+	}
+	
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  
+	.hidden-xl-down {display: inherit;}
+	.hidden-xl-up {display: none;}
+
+}
+
