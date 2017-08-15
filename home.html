@@ -21,11 +21,9 @@
 	
 	<div class="global-promo dark">
 		<div class="container">
-			<a href="#">Free shipping & returns</a>
-<!--
-			<a href="#">HSA / FSA Eligible Expense</a>
-			<a href="#">Risk Free 30 day Guarantee</a>
--->
+			<a href="#" id="ad1">Free shipping & returns</a>
+			<a href="#" class="ad2" style="display: none;">HSA / FSA Eligible Expense</a>
+			<a href="#" class="ad3" style="display: none;">Risk Free 30 day Guarantee</a>
 		</div>
 	</div>
 	
@@ -44,29 +42,22 @@
 	    <ul class="navbar-nav">
 	      <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Men
+	          Eyeglasses
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="#">Prescription glasses</a>
-	          <a class="dropdown-item" href="#">Prescription sunglasses</a>
+	          <a class="dropdown-item" href="#">Men</a>
+	          <a class="dropdown-item" href="#">Women</a>
+	          <a class="dropdown-item" href="#">Youth</a>
 	        </div>
 	      </li>
 	      <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Women
+	          Rx Sunglasses
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="#">Prescription glasses</a>
-	          <a class="dropdown-item" href="#">Prescription sunglasses</a>
-	        </div>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Youth
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-	          <a class="dropdown-item" href="#">Prescription glasses</a>
-	          <a class="dropdown-item" href="#">Prescription sunglasses</a>
+	          <a class="dropdown-item" href="#">Men</a>
+	          <a class="dropdown-item" href="#">Women</a>
+	          <a class="dropdown-item" href="#">Youth</a>
 	        </div>
 	      </li>
 	      <li class="nav-item dropdown">
@@ -81,7 +72,7 @@
 	      </li>
 	      <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Activity
+	          Activities
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	          <a class="dropdown-item" href="#">Activity 1</a>
@@ -104,12 +95,15 @@
 			  </li>
 	    </ul>
 			<form class="form-inline">
-			  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+				<div class="search-bar">
+					<i class="search-icon icon-magnifying-glass"></i>
+				  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+				</div>
 			</form>		  
 	  </div> <!-- navbar-collapse END -->
-		<div class="right-nav hidden-lg-down" style="margin-right: -30px;">
-			<a class="nav-item nav-link hidden-lg-down" href="#">Sign in</a>
+		<div class="right-nav hidden-lg-down" style="margin-right: -15px;">
 			<a class="nav-item nav-link cart-btn" href="#"><i class="icon-shopping-cart"></i></a>
+			<a class="nav-item nav-link hidden-lg-down" href="#">Sign in</a>
 		</div>
     </div>
 	</nav>
@@ -143,20 +137,78 @@
 		</div>
 	</div> <!-- End container -->
 	
+		
 	<footer>
+		
+	<nav class="navbar navbar-expand-lg navbar-light bg-light hidden-sm-up">
+	  <div class=" navbar-collapse" id="navbarNavDropdown">
+	    <ul class="navbar-nav">
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          About us
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">About Us</a>
+						<a class="dropdown-item" href="#">Blog</a>
+						<a class="dropdown-item" href="#">Careers</a>
+						<a class="dropdown-item" href="#">Our Guarantee</a>
+						<a class="dropdown-item" href="#">Privacy Policy</a>
+	        </div>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Help
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Contact Us</a>
+						<a class="dropdown-item" href="#">Customer Service</a>
+						<a class="dropdown-item" href="#">Shipping & Returns</a>
+						<a class="dropdown-item" href="#">Customer Account Login</a>
+						<a class="dropdown-item" href="#">FAQs</a>
+						<a class="dropdown-item" href="#">Leave Us Feedback</a>
+	        </div>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Education
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">How to Buy Glasses Online</a>
+						<a class="dropdown-item" href="#">Frame Size Guide</a>
+						<a class="dropdown-item" href="#">Pupil Distance (PD)</a>
+						<a class="dropdown-item" href="#">Lens Types & Materials</a>
+						<a class="dropdown-item" href="#">Safety Glasses Guide</a>
+	        </div>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Activities
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Fishing</a>
+						<a class="dropdown-item" href="#">Running</a>
+						<a class="dropdown-item" href="#">Golf</a>
+						<a class="dropdown-item" href="#">Baseball</a>
+						<a class="dropdown-item" href="#">Tennis</a>
+	        </div>
+	      </li>
+	    </ul>
+	  </div> <!-- navbar-collapse END -->
+	</nav>
+		
+		
+		
 	<div class="container">
 		<div class="row small">
-			<ul class="col-sm-4">
+			<ul class="col-lg-2 col-sm-6 hidden-sm-down">
 				<h5>About Us</h5>
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Blog</a></li>
-				<li><a href="#">Reviews</a></li>
-				<li><a href="#">Affiliate Program</a></li>
 				<li><a href="#">Careers</a></li>
 				<li><a href="#">Our Guarantee</a></li>
 				<li><a href="#">Privacy Policy</a></li>
 			</ul>
-			<ul class="col-sm-4">
+			<ul class="col-lg-2 col-sm-6 hidden-sm-down">
 				<h5>Help</h5>
 				<li><a href="#">Contact Us</a></li>
 				<li><a href="#">Customer Service</a></li>
@@ -165,7 +217,23 @@
 				<li><a href="#">FAQs</a></li>
 				<li><a href="#">Leave Us Feedback</a></li>
 			</ul>
-			<ul class="col-sm-4 social">
+			<ul class="col-lg-2 col-sm-6 hidden-sm-down">
+				<h5>Education</h5>
+				<li><a href="#">How to Buy Glasses Online</a>
+				<li><a href="#">Frame Size Guide</a>
+				<li><a href="#">Pupil Distance (PD)</a></li>
+				<li><a href="#">Lens Types & Materials</a></li>
+				<li><a href="#">Safety Glasses Guide</a></li>
+			</ul>
+			<ul class="col-lg-2 col-sm-6 hidden-sm-down">
+				<h5>Activities</h5>
+				<li><a href="#">Fishing</a></li>
+				<li><a href="#">Running</a></li>
+				<li><a href="#">Golf</a></li>
+				<li><a href="#">Baseball</a></li>
+				<li><a href="#">Tennis</a></li>
+			</ul>
+			<ul class="col-lg-3 col-sm-12 social">
 				<h5>Connect</h5>
 				<li><a href="#"><span class="icon-facebook-with-circle"></span></a></li>
 				<li><a href="#"><span class="icon-google-with-circle"></span></a></li>
@@ -175,48 +243,12 @@
 				<li><a href="#"><span class="icon-instagram-with-circle"></span></a></li>
 				<li><a href="#"><span class="icon-youtube-with-circle"></span></a></li>
 			</ul>
-<!--
-			<ul class="col-sm-4 social">
-				<h5>Social</h5>
-				<li><a href="#"><span class="icon-facebook-with-circle"></span> Facebook</a></li>
-				<li><a href="#"><span class="icon-google-with-circle"></span> Google Plus</a></li>
-				<li><a href="#"><span class="icon-pinterest-with-circle"></span> Pinterest</a></li>
-				<li><a href="#"><span class="icon-twitter-with-circle"></span> Twitter</a></li>
-				<li><a href="#"><span class="icon-tumblr-with-circle"></span> Tumblr</a></li>
-				<li><a href="#"><span class="icon-instagram-with-circle"></span> Instagram</a></li>
-				<li><a href="#"><span class="icon-youtube-with-circle"></span> Youtube</a></li>
-			</ul>
--->
-			<ul class="col-sm-4">
-				<h5>Prescription Glasses Guides</h5>
-				<li><a href="#">How to Buy Prescription Glasses Online</a>
-				<li><a href="#">Guide to Prescription Eyewear Terms</a>
-				<li><a href="#">Prescription Glasses Size Guide </a>
-				<li><a href="#">What is Your Pupil Distance (PD)?</a></li>
-				<li><a href="#">About Lens Types & Materials</a></li>
-				<li><a href="#">Prescription Safety Glasses Guide</a></li>
-			</ul>
-			<ul class="col-sm-4">
-				<h5>Prescription Eyewear Guides by Brand</h5>
-				<li><a href="#">How to Buy Prescription Glasses Online</a>
-				<li><a href="#">Guide to Prescription Eyewear Terms</a>
-				<li><a href="#">Prescription Glasses Size Guide </a>
-				<li><a href="#">What is Your Pupil Distance (PD)?</a></li>
-				<li><a href="#">About Lens Types & Materials</a></li>
-				<li><a href="#">Prescription Safety Glasses Guide</a></li>
-			</ul>
-			<ul class="col-sm-4">
-				<h5>Prescription Eyewear Guides by Activity</h5>
-				<li><a href="#">Rx Fishing Sunglasses & Lens Tint Guide</a></li>
-				<li><a href="#">Prescription Running Sunglasses Review & Guide</a></li>
-				<li><a href="#">Prescription Golf Sunglasses Review & Guide</a></li>
-				<li><a href="#">Prescription Baseball and Softball Sunglasses Review & Guide</a></li>
-				<li><a href="#">Prescription Tennis Sunglass Guide</a></li>
-				<li><a href="#">Prescription Safety Glasses Guide</a></li>
-			</ul>
 		</div>
 	</div>
 	</footer>
+	<div class="copyright container">
+		<small>© 2017 Salt City Optics. All Rights Reserved</small>
+	</div>
 	
 
   
@@ -224,7 +256,40 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+	
+/*
+	var adVis = 1;	
+	if (adVis = 1) {
+	  $('.ad1').delay(1200000).text('test2');
+	  adVis = 2;
+	}
+*/
+
+
+
+});
+/*
+
+setTimeout(function() { // start a delay
+  var fade = document.getElementById("ad1"); // get required element
+  fade.style.opacity = 1; // set opacity for the element to 1
+  var timerId = setInterval(function() { // start interval loop
+    var opacity = fade.style.opacity; // get current opacity
+    if (opacity == 0) { // check if its 0 yet
+      clearInterval(timerId); // if so, exit from interval loop
+    } else {
+      fade.style.opacity = opacity - 0.05; // else remove 0.05 from opacity
+    }
+  }, 100); // run every 0.1 second
+}, 500); // wait to run after 5 seconds
+*/
+
+</script>
   
 </body>
 </html>

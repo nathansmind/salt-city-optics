@@ -89,9 +89,24 @@ nav .form-inline {
 		
 	}
 }
+.search-bar {
+	position: relative;
+	width: 100% !important;
+	.search-icon {
+		position: absolute;
+		font-size: 20px;
+		left: 10px;
+		top: 8px;
+		color: $gray-600;
+	}
+	input {
+		padding-left: 35px;
+	}
+}
+
 .navbar-light .navbar-toggler {border-color: rgba(0, 0, 0, 0);}
 .right-nav {
-	a {padding-top: 14px;}
+	a {padding-top: 14px; float: right;}
 }
 .cart-btn {
 	color: $gray-700;
@@ -117,9 +132,6 @@ footer {
 	background: $gray-100;
 	padding: 40px;
 	margin-top: 40px;
-	h5 {
-		margin-left: -15px;
-	}
 	.social {
 		list-style: none;
 		padding-left: 0;
@@ -128,6 +140,14 @@ footer {
 		a:hover {text-decoration: none;}
 		li {float: left;}
 	}
+	ul {
+		padding-left: 0 !important;
+		list-style: none;
+	}
+}
+.copyright {
+	text-align: center;
+	padding: 10px;
 }
 
 //
@@ -135,18 +155,18 @@ footer {
 //
 
 .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down {display: none;}
-.hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up {display: inherit;}
+.hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up {display: initial;}
 .navbar-brand {margin-right: 0;}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-	.hidden-sm-down {display: inherit;}
+	.hidden-sm-down {display: initial;}
 	.hidden-sm-up {display: none;}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  
-	.hidden-md-down {display: inherit;}
+	.hidden-md-down {display: initial;}
 	.hidden-md-up {display: none;}
 	
 	.navbar-brand {margin-right: 1rem;}
@@ -155,7 +175,7 @@ footer {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  
-	.hidden-lg-down {display: inherit;}
+	.hidden-lg-down {display: initial;}
 	.hidden-lg-up {display: none;}
 	.right-nav {width: 180px;}
 	.dropdown-toggle {
@@ -167,12 +187,12 @@ footer {
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  
+@media (min-width: 1400px) {  
 	.hidden-xl-down {display: inherit;}
 	.hidden-xl-up {display: none;}
 	nav .form-inline {
 		position: relative;
-		width: 613px;
+		width: 563px;
 		box-sizing: border-box;
 		left: 0;
 		padding-right: 0;
