@@ -10,6 +10,7 @@
   <!-- Typekit -->
 	<script src="https://use.typekit.net/zqd7fxf.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 	
   <!-- CSS -->
   <link href="css/styles.css" rel="stylesheet">
@@ -19,16 +20,32 @@
 
 <body id="style-guide">
 	
-	<div class="global-promo dark">
+	<div class="support-nav hidden-md-up">
 		<div class="container">
-			<a href="#" id="ad1">Free shipping & returns</a>
-			<a href="#" class="ad2" style="display: none;">HSA / FSA Eligible Expense</a>
-			<a href="#" class="ad3" style="display: none;">Risk Free 30 day Guarantee</a>
+			<a href="#" class="mobile">Free shipping & returns</a>
+		</div>
+	</div>
+
+<!-- 	Support nav desktop -->
+	<div class="support-nav hidden-md-down">
+		<div class="container">
+			<a href="#"><small>Free shipping & returns</small></a> 
+			<a href="#"><small>Risk Free 30 day Guarantee</small></a>
+			<div class="right">
+				<a href="#" id="ad1"><small>1 (888) 507-1230</small></a>
+				<a href="#" id="ad1"><small>Sign in</small></a>
+			</div>
 		</div>
 	</div>
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+    <div class="container" style="position: relative;">
+		<form class="form-inline search-1">
+			<div class="search-bar">
+				<i class="search-icon icon-magnifying-glass"></i>
+			  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+			</div>
+		</form>		  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     	<span class="navbar-toggler-icon"></span>
 	  </button>
@@ -94,16 +111,15 @@
 					<a class="nav-item nav-link hidden-lg-up" href="#">Sign In</a>
 			  </li>
 	    </ul>
-			<form class="form-inline">
+			<form class="form-inline search-2">
 				<div class="search-bar">
 					<i class="search-icon icon-magnifying-glass"></i>
 				  <input class="form-control mr-sm-2" type="text" placeholder="Search">
 				</div>
 			</form>		  
 	  </div> <!-- navbar-collapse END -->
-		<div class="right-nav hidden-lg-down" style="margin-right: -15px;">
-			<a class="nav-item nav-link cart-btn" href="#"><i class="icon-shopping-cart"></i></a>
-			<a class="nav-item nav-link hidden-lg-down" href="#">Sign in</a>
+		<div class="hidden-lg-down" style="margin-right: 0;">
+			<a class="nav-item nav-link cart-btn" style="padding-right: 0;" href="#"><i class="icon-shopping-cart"></i>Cart</a>
 		</div>
     </div>
 	</nav>
@@ -112,25 +128,43 @@
 	<!-- __________ Page content________ -->
 	
 	<!-- Main Banner -->
-	<div class="container">
-		<div>
-		
-			<div class="main-banner bg-blue" style="background-image: url(img/promo/outdoor.jpg);">
+	<div class="main-banner container">
+		<div class="main-banner-img">
+				<img class="hidden-md-down" src="img/promo/main-promo2.jpg">
+				<img class="hidden-md-up" src="img/promo/main-promo-small2.jpg">
+		</div>
+		<div class="main-promo-content container">
+			<div class="col-sm-12 col-md-4 right">
+				<h1 class="hh">Summer Savings</h1>
+				<p class="intro">20% off Rx Sunglasses</p>
+				<a href="#" class="btn btn-outline-primary">Use Code: SUNNY20</a>
 			</div>
-		
+		</div>
+	</div>
+	
+	<div class="container sub1">
+		<div class="row">
+			<div class="sub1-img col-md-8">
+				<img src="img/promo/man.jpg">
+			</div>
+			<div class="sub1-content  col-md-4">
+				<h2>Men's Rx Sunglasses</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<a href="#" class="btn btn-outline-primary">Use Code: SUNNY20</a>
+			</div>
 		</div>
 	</div>
 
 	<!-- Sub Banners -->
-	<div class="container">
+	<div class="container banner-wells">
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-md-6">
 				<h2>Women's Rx Sunglasses</h2>
 				<div class="well bg-blue" style="background-image: url(img/women.png);">
 				</div>
 			</div>
-			<div class="col-sm-6">
-				<h2>Man's Rx Sunglasses</h2>
+			<div class="col-md-6">
+				<h2>Men's Rx Sunglasses</h2>
 				<div class="well bg-blue" style="background-image: url(img/men.jpg);">
 				</div>
 			</div>
@@ -200,49 +234,59 @@
 		
 	<div class="container">
 		<div class="row small">
-			<ul class="col-lg-2 col-sm-6 hidden-sm-down">
-				<h5>About Us</h5>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Our Guarantee</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-			</ul>
-			<ul class="col-lg-2 col-sm-6 hidden-sm-down">
-				<h5>Help</h5>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">Customer Service</a></li>
-				<li><a href="#">Shipping & Returns</a></li>
-				<li><a href="#">Customer Account Login</a></li>
-				<li><a href="#">FAQs</a></li>
-				<li><a href="#">Leave Us Feedback</a></li>
-			</ul>
-			<ul class="col-lg-2 col-sm-6 hidden-sm-down">
-				<h5>Education</h5>
-				<li><a href="#">How to Buy Glasses Online</a>
-				<li><a href="#">Frame Size Guide</a>
-				<li><a href="#">Pupil Distance (PD)</a></li>
-				<li><a href="#">Lens Types & Materials</a></li>
-				<li><a href="#">Safety Glasses Guide</a></li>
-			</ul>
-			<ul class="col-lg-2 col-sm-6 hidden-sm-down">
-				<h5>Activities</h5>
-				<li><a href="#">Fishing</a></li>
-				<li><a href="#">Running</a></li>
-				<li><a href="#">Golf</a></li>
-				<li><a href="#">Baseball</a></li>
-				<li><a href="#">Tennis</a></li>
-			</ul>
-			<ul class="col-lg-3 col-sm-12 social">
-				<h5>Connect</h5>
-				<li><a href="#"><span class="icon-facebook-with-circle"></span></a></li>
-				<li><a href="#"><span class="icon-google-with-circle"></span></a></li>
-				<li><a href="#"><span class="icon-pinterest-with-circle"></span></a></li>
-				<li><a href="#"><span class="icon-twitter-with-circle"></span></a></li>
-				<li><a href="#"><span class="icon-tumblr-with-circle"></span></a></li>
-				<li><a href="#"><span class="icon-instagram-with-circle"></span></a></li>
-				<li><a href="#"><span class="icon-youtube-with-circle"></span></a></li>
-			</ul>
+			<div class="col-lg-2 col-sm-6 hidden-sm-down">
+				<ul>
+					<h5>About Us</h5>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Our Guarantee</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-sm-6 hidden-sm-down">
+				<ul>
+					<h5>Help</h5>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Customer Service</a></li>
+					<li><a href="#">Shipping & Returns</a></li>
+					<li><a href="#">Customer Account Login</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Leave Us Feedback</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-sm-6 hidden-sm-down">
+				<ul>
+					<h5>Education</h5>
+					<li><a href="#">How to Buy Glasses Online</a>
+					<li><a href="#">Frame Size Guide</a>
+					<li><a href="#">Pupil Distance (PD)</a></li>
+					<li><a href="#">Lens Types & Materials</a></li>
+					<li><a href="#">Safety Glasses Guide</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-sm-6 hidden-sm-down">
+				<ul>
+					<h5>Activities</h5>
+					<li><a href="#">Fishing</a></li>
+					<li><a href="#">Running</a></li>
+					<li><a href="#">Golf</a></li>
+					<li><a href="#">Baseball</a></li>
+					<li><a href="#">Tennis</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-sm-12 social">
+				<ul>
+					<h5>Connect</h5>
+					<li><a href="#"><span class="icon-facebook-with-circle"></span></a></li>
+					<li><a href="#"><span class="icon-google-with-circle"></span></a></li>
+					<li><a href="#"><span class="icon-pinterest-with-circle"></span></a></li>
+					<li><a href="#"><span class="icon-twitter-with-circle"></span></a></li>
+					<li><a href="#"><span class="icon-tumblr-with-circle"></span></a></li>
+					<li><a href="#"><span class="icon-instagram-with-circle"></span></a></li>
+					<li><a href="#"><span class="icon-youtube-with-circle"></span></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	</footer>

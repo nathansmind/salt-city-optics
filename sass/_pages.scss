@@ -46,7 +46,9 @@
 		}
 	}
 }
-
+.btn-outline-primary {
+	background: #fff;
+}
 .typography {
 	.hh, h1, h2, h3, h4, h5, h6 {margin-bottom: 0;}
 	small {margin-bottom: 30px; display: inline-block;}
@@ -55,21 +57,45 @@
 //
 // Home
 //
-
 .main-banner {
-	height: calc(100vh - 118px);
-	background: center center;
-	background-size: cover;
-	margin-bottom: 20px;
-	width: 100%;
+	position: relative;
+	margin-top: 20px;
+	.main-banner-img {
+		margin-bottom: 10px;
+		img {
+			width: 100%;
+		}
+	}
+	.main-promo-content {
+		position: relative;
+		top: 0;
+		margin: 0;
+		text-align: center;
+		margin-bottom: 40px;
+	}
 }
-.well {
-	height: 50vh;
-	background: center center;
-	background-size: cover;
-	width: 100%;
+.banner-wells {
+	text-align: center;
+	margin-top: 30px;
+	.well {
+		height: 50vh;
+		background: center center;
+		background-size: cover;
+		width: 100%;
+		margin-bottom: 10px;
+	}
 }
-
+.sub1 {
+	text-align: center;
+	.sub1-img {
+		padding: 0 15px;
+		img {width: 100%;}
+	}
+	.sub1-content {
+		padding: 0 15px;
+		margin-top: 40px;
+	}
+}
 
 //
 // Header
@@ -82,13 +108,14 @@ nav .form-inline {
 	width: 100%;
 	box-sizing: border-box;
 	left: 0;
-	padding-right: 208px;
-	padding-left: 717px;
+	padding-right: 100px;
+	padding-left: 680px;
 	input {
 		width: 100% !important;
 		
 	}
 }
+
 .search-bar {
 	position: relative;
 	width: 100% !important;
@@ -110,18 +137,32 @@ nav .form-inline {
 }
 .cart-btn {
 	color: $gray-700;
+	i {margin-right: 5px;}
 }
-.global-promo {
-	&.dark {
-		background-color: $gray-700; 
-		a {color: $white;}
-	}
+
+.support-nav {
+	&.dark {background-color: $gray-700; a{color: $white;}}
+	padding: 5px 0; 
 	a {
-		display: block;
+		
+		display: inline-block;
+		margin-right: 30px;
+		small {
+			font-size: 14px;
+		}
+	}
+	.right {
+		float: right;
+		a {
+			margin-left: 30px;
+			margin-right: 0px;
+		}
+	}
+	.mobile {
+		display: inline-block;
 		width: 100%;
 		text-align: center;
-		padding: 10px;
-	}
+	}		
 }
 
 //
@@ -155,52 +196,96 @@ footer {
 //
 
 .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down {display: none;}
-.hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up {display: initial;}
+.hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up {display: inherit;}
 .navbar-brand {margin-right: 0;}
+.search-1 {display: none;}
+.search-2 {display: none;}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-	.hidden-sm-down {display: initial;}
+	.hidden-sm-down {display: inherit;}
 	.hidden-sm-up {display: none;}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  
-	.hidden-md-down {display: initial;}
+	.hidden-md-down {display: inherit;}
 	.hidden-md-up {display: none;}
 	
 	.navbar-brand {margin-right: 1rem;}
-
+	.main-banner {
+		position: relative;
+		.main-banner-img {
+			img {
+				width: 100%;
+			}
+		}
+		.main-promo-content {
+			position: absolute;
+			top: 20%;
+			margin: 0 40px;
+			max-width: 1214px;
+		}
+	}
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  
-	.hidden-lg-down {display: initial;}
+	.hidden-lg-down {display: inherit;}
 	.hidden-lg-up {display: none;}
 	.right-nav {width: 180px;}
 	.dropdown-toggle {
 		margin-right: 20px;
 		&::after {display: none;}
 	}
+	.search-1 {display: block;}
 	
-
+	.sub1 {
+		text-align: left;
+		.sub1-img {
+			padding: 40px;
+			img {width: 100%;}
+		}
+		.sub1-content {
+			padding: 40px 0 40px 40px;
+			margin-top: 10%;
+		}
+	}
+	
 }
 
-// Extra large devices (large desktops, 1200px and up)
+// Extra large devices (large desktops, 1400px and up)
+@media (min-width: 1200px) {  
+	.main-banner .main-promo-content {
+		top: 35%;
+	}
+.sub1 {
+	.sub1-img {
+		padding: 80px;
+		img {width: 100%;}
+	}
+	.sub1-content {
+		padding: 80px 0;
+		margin-top: 10%;
+	}
+}
+}
+// Extra large devices (large desktops, 1400px and up)
 @media (min-width: 1400px) {  
 	.hidden-xl-down {display: inherit;}
 	.hidden-xl-up {display: none;}
 	nav .form-inline {
 		position: relative;
-		width: 555px;
+		width: 605px;
 		box-sizing: border-box;
 		left: 0;
 		padding-right: 0;
 		padding-left: 0;
 		input {
 			width: 100% !important;
-			
 		}
 	}
+	.search-1 {display: none;}
+	.search-2 {display: block;}
 }
 
