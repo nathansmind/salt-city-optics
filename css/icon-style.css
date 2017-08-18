@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-envelope:before {
+  content: "\ea81";
+}
+.icon-cart:before {
+  content: "\ea82";
+}
 .icon-add-to-list:before {
   content: "\e900";
 }
