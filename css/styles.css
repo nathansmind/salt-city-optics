@@ -9650,19 +9650,20 @@ a.text-dark:focus, a.text-dark:hover {
 .main-banner {
   position: relative;
   margin-top: 20px;
+  cursor: pointer;
 }
 
-/* line 63, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 64, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .main-banner .main-banner-img {
   margin-bottom: 10px;
 }
 
-/* line 65, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 66, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .main-banner .main-banner-img img {
   width: 100%;
 }
 
-/* line 69, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 70, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .main-banner .main-promo-content {
   position: relative;
   top: 0;
@@ -9671,13 +9672,14 @@ a.text-dark:focus, a.text-dark:hover {
   margin-bottom: 40px;
 }
 
-/* line 77, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 78, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .banner-wells {
   text-align: center;
   margin-top: 30px;
+  cursor: pointer;
 }
 
-/* line 80, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 82, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .banner-wells .well {
   height: 50vh;
   background: center center;
@@ -9686,33 +9688,104 @@ a.text-dark:focus, a.text-dark:hover {
   margin-bottom: 10px;
 }
 
-/* line 88, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 90, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .sub1 {
   text-align: center;
+  cursor: pointer;
 }
 
-/* line 90, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 93, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .sub1 .sub1-img {
   padding: 0 15px;
 }
 
-/* line 92, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 95, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .sub1 .sub1-img img {
   width: 100%;
 }
 
-/* line 94, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 97, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .sub1 .sub1-content {
   padding: 0 15px;
-  margin-top: 40px;
+  margin: 20px 0 40px 0;
 }
 
-/* line 103, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 102, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.sub1.left .sub1-content {
+  padding-left: 80px;
+}
+
+/* line 106, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.brand-logos {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+/* line 110, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.brand-logos img {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 116, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.brand-logos ul {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+/* line 119, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.brand-logos ul li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* line 130, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.img-gallery img {
+  width: 100%;
+}
+
+/* line 133, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.customize-box h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 134, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.customize-box h5 {
+  margin-bottom: 0;
+}
+
+/* line 135, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.customize-box .select {
+  margin-bottom: 30px;
+}
+
+/* line 138, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.customize-box .help {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* line 142, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.customize-box .multi-option {
+  margin-bottom: 20px;
+}
+
+/* line 146, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+.buy-box {
+  padding: 20px;
+  background: #e9ecef;
+}
+
+/* line 154, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 nav {
   position: relative;
 }
 
-/* line 106, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 157, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 nav .form-inline {
   position: absolute;
   width: 100%;
@@ -9722,18 +9795,18 @@ nav .form-inline {
   padding-left: 680px;
 }
 
-/* line 113, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 164, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 nav .form-inline input {
   width: 100% !important;
 }
 
-/* line 119, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 170, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .search-bar {
   position: relative;
   width: 100% !important;
 }
 
-/* line 122, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 173, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .search-bar .search-icon {
   position: absolute;
   font-size: 20px;
@@ -9742,82 +9815,82 @@ nav .form-inline input {
   color: #868e96;
 }
 
-/* line 129, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 180, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .search-bar input {
   padding-left: 35px;
 }
 
-/* line 134, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 185, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .navbar-light .navbar-toggler {
   border-color: transparent;
 }
 
-/* line 136, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 187, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .right-nav a {
   padding-top: 14px;
   float: right;
 }
 
-/* line 138, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 189, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .cart-btn {
   color: #495057;
 }
 
-/* line 140, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 191, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .cart-btn i {
   margin-right: 5px;
 }
 
-/* line 143, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 194, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .support-nav {
   padding: 5px 0;
 }
 
-/* line 144, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 195, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .support-nav.dark {
   background-color: #495057;
 }
 
-/* line 144, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 195, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .support-nav.dark a {
   color: #fff;
 }
 
-/* line 146, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 197, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .support-nav a {
   display: inline-block;
   margin-right: 30px;
 }
 
-/* line 150, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 201, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .support-nav a small {
   font-size: 14px;
 }
 
-/* line 154, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 205, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .support-nav .right {
   float: right;
 }
 
-/* line 156, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 207, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .support-nav .right a {
   margin-left: 30px;
   margin-right: 0px;
 }
 
-/* line 161, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 212, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .support-nav .mobile {
   display: inline-block;
   width: 100%;
   text-align: center;
 }
 
-/* line 168, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 219, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 nav li.dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* line 172, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 223, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .mobile-search-field {
   height: 0;
   opacity: 0;
@@ -9825,200 +9898,218 @@ nav li.dropdown:hover .dropdown-menu {
   transition: all 300ms ease;
 }
 
-/* line 177, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 228, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .mobile-search-field.open {
   height: inherit;
   opacity: 1;
   margin-top: 20px;
 }
 
-/* line 188, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 239, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 footer {
   background: #f8f9fa;
   padding: 40px;
   margin-top: 40px;
 }
 
-/* line 192, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 243, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 footer .social {
   list-style: none;
   padding-left: 0;
 }
 
-/* line 195, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 246, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 footer .social h5 {
   margin-left: 0;
 }
 
-/* line 196, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 247, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 footer .social span {
   font-size: 26px;
   color: #343a40;
   margin-right: 10px;
 }
 
-/* line 197, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 248, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 footer .social a:hover {
   text-decoration: none;
 }
 
-/* line 198, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 249, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 footer .social li {
   float: left;
 }
 
-/* line 200, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 251, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 footer ul {
   padding-left: 0 !important;
   list-style: none;
 }
 
-/* line 205, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 256, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .copyright {
   text-align: center;
   padding: 10px;
 }
 
-/* line 214, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 265, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down {
   display: none;
 }
 
-/* line 215, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 266, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up {
   display: inherit;
 }
 
-/* line 216, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 267, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .navbar-brand {
   margin-right: 0;
 }
 
-/* line 217, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 268, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .search-1 {
   display: none;
 }
 
-/* line 218, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+/* line 269, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
 .search-2 {
   display: none;
 }
 
 @media (min-width: 576px) {
-  /* line 222, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 273, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .hidden-sm-down {
     display: inherit;
   }
-  /* line 223, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 274, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .hidden-sm-up {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 228, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 279, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .hidden-md-down {
     display: inherit;
   }
-  /* line 229, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 280, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .hidden-md-up {
     display: none;
   }
-  /* line 231, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 282, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .navbar-brand {
     margin-right: 1rem;
   }
-  /* line 232, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 283, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .main-banner {
     position: relative;
   }
-  /* line 235, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 286, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .main-banner .main-banner-img img {
     width: 100%;
   }
-  /* line 239, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 290, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .main-banner .main-promo-content {
     position: absolute;
     top: 20%;
     margin: 0 40px;
     max-width: 1214px;
   }
+  /* line 297, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  .brand-logos {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 992px) {
-  /* line 250, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 306, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .hidden-lg-down {
     display: inherit;
   }
-  /* line 251, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 307, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .hidden-lg-up {
     display: none;
   }
-  /* line 252, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 308, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .right-nav {
     width: 180px;
   }
-  /* line 253, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 309, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .dropdown-toggle {
     margin-right: 20px;
   }
-  /* line 255, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 311, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .dropdown-toggle::after {
     display: none;
   }
-  /* line 257, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 313, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .search-1 {
     display: block;
   }
-  /* line 259, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 315, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .sub1 {
     text-align: left;
   }
-  /* line 261, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 317, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .sub1 .sub1-img {
     padding: 40px;
   }
-  /* line 263, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 319, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .sub1 .sub1-img img {
     width: 100%;
   }
-  /* line 265, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 321, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .sub1 .sub1-content {
     padding: 40px 0 40px 40px;
-    margin-top: 10%;
+    margin: 0;
+  }
+  /* line 326, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  .brand-logos {
+    margin-top: 20px;
+    margin-bottom: -40px;
+    padding-top: 20px;
   }
 }
 
 @media (min-width: 1200px) {
-  /* line 275, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 335, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .main-banner .main-promo-content {
     top: 35%;
   }
-  /* line 279, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 339, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .sub1 .sub1-img {
-    padding: 80px;
+    padding: 60px 80px;
   }
-  /* line 281, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 341, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .sub1 .sub1-img img {
     width: 100%;
   }
-  /* line 283, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 343, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .sub1 .sub1-content {
     padding: 80px 0;
-    margin-top: 10%;
+    margin: 0;
+  }
+  /* line 348, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  .brand-logos {
+    margin-top: 20px;
+    margin-bottom: -40px;
+    padding-top: 40px;
   }
 }
 
 @media (min-width: 1400px) {
-  /* line 291, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 356, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .hidden-xl-down {
     display: inherit;
   }
-  /* line 292, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 357, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .hidden-xl-up {
     display: none;
   }
-  /* line 293, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 358, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   nav .form-inline {
     position: relative;
     width: 605px;
@@ -10027,17 +10118,23 @@ footer ul {
     padding-right: 0;
     padding-left: 0;
   }
-  /* line 300, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 365, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   nav .form-inline input {
     width: 100% !important;
   }
-  /* line 304, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 369, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .search-1 {
     display: none;
   }
-  /* line 305, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  /* line 370, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
   .search-2 {
     display: block;
+  }
+  /* line 371, /Applications/MAMP/htdocs/salt-city-optics/sass/_pages.scss */
+  .brand-logos {
+    margin-top: 20px;
+    margin-bottom: -40px;
+    padding-top: 40px;
   }
 }
 
