@@ -143,9 +143,9 @@
 	<!-- __________ Page content________ -->
 	
 	<div class="container">
-		<div class="row ">
-			<div class="img-gallery col-sm-12 col-md-6 col-lg-5">
-				<div class="product-img">
+		<div class="row justify-content-md-center">
+			<div class="img-gallery col-sm-12 col-md-6 col-lg-6 col-xl-5">
+				<div class="product-img fix">
 					<img src="img/product/product-img.jpg">
 					<div class="slider-dots">
 						<div class="active"></div>
@@ -155,7 +155,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="customize-box col-sm-12 col-md-6 col-lg-3">
+			<div class="customize-box col-sm-12 col-md-6 col-lg-4 col-xl-3">
 				<h1 class="h3">Oakley Two Face XL Prescription Sunglasses</h1>
 				
 				<!-- Frame -->
@@ -545,8 +545,9 @@ $( document ).ready(function() {
 
 $(document).scroll(function() {
   var y = $(document).scrollTop(),
+  		screenWidth = $(window).width(),
       fixer = $(".product-img");
-  if(y >= 120)  {
+  if(y >= 120 && screenWidth > 760)  {
       fixer.css({position: "fixed", "top" : "0"});
   } else {
       fixer.css("position", "relative");
