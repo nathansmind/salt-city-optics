@@ -144,17 +144,45 @@
 	
 	<div class="container">
 		<div class="row justify-content-md-center">
-			<div class="img-gallery col-sm-12 col-md-6 col-lg-6 col-xl-5">
+			
+			<!-- Image -->
+			<div class="img-gallery js-main-img col-sm-12 col-md-6 col-lg-6 col-xl-5">
 				<div class="product-img fix">
-					<img src="img/product/product-img.jpg">
-					<div class="slider-dots">
-						<div class="active"></div>
-						<div></div>
-						<div></div>
-						<div></div>
+					<img src="img/product/product-img.jpg" class="reg-img" >
+					<img src="img/product/product-img-tint2.jpg" class="tint-img" style="display: none;">
+					<div class="info-hover">
+						<h6>Selection name</h6>
+						<p>Some info about Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 				</div>
 			</div>
+			
+			<!-- Hovers single -->
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-5 hovers sing">
+				<div class="product-img fix">
+					<div class="img-in-hover"><img src="img/hovers/single_vision_00_3.png"></div>
+					<h6>Single Vision</h6>
+					<p>Single vision lenses have only one type of correction.</p>
+				</div>
+			</div>
+			<!-- Hovers prog -->
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-5 hovers prog">
+				<div class="product-img fix">
+					<div class="img-in-hover"><img src="img/hovers/progressive_digital_3.png"></div>
+					<h6>Progressive lenses</h6>
+					<p>Progressive lenses provide distance, intermediate, and reading in one lens without lines. These have also been referred to as unlined bifocals or trifocals.</p>
+				</div>
+			</div>
+			<!-- Hovers Tint -->
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-5 img-gallery hovers tint">
+				<div class="product-img fix">
+					<img src="img/product/product-img-tint2.jpg">
+					<h6>Fire Iridium</h6>
+					<p>Great for Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			
+			
 			<div class="customize-box col-sm-12 col-md-6 col-lg-4 col-xl-3">
 				<h1 class="h3">Oakley Two Face XL Prescription Sunglasses</h1>
 				
@@ -187,10 +215,10 @@
 					<h5>Vision Type</h5>
 					<a href="javascript:" class="help" data-toggle="modal" data-target="#visionModal"><small>Which lenses are right for you?</small></a>
 					<div class="row">
-						<div class="col-sm-12 multi-option">
+						<div class="col-sm-12 multi-option sing">
 		        	<a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Single vision</a>
 						</div>
-						<div class="col-sm-12 multi-option">
+						<div class="col-sm-12 multi-option prog">
 			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Progressive</a>
 						</div>
 					</div>
@@ -202,15 +230,18 @@
 				</div>
 				
 				<!-- Lens Brand -->
-				<div class="select">
+				<div class="select js-brand">
 					<h5>Lens Brand</h5>
 					<a href="javascript:" class="help" data-toggle="modal" data-target="#brandModal"><small>Which is right for you?</small></a>
 					<div class="row">
-						<div class="col-sm-12 multi-option">
+						<div class="col-sm-12 multi-option info">
 		        	<a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Oakley Authentic <span class="button-price">+$130</span></a>
 						</div>
-						<div class="col-sm-12 multi-option">
+						<div class="col-sm-12 multi-option info">
 			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Salt City Optics</a>
+						</div>
+						<div class="col-sm-12 multi-option info">
+			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Salt City Optics Packages</a>
 						</div>
 					</div>
 				</div>
@@ -221,20 +252,20 @@
 				</div>
 								
 				<!-- Lens -->
-				<div class="select">
+				<div class="select js-lens-select dynamic-lens">
 					<h5>Lens</h5>
 					<a href="javascript:" class="help" data-toggle="modal" data-target="#brandModal"><small>Which lenses are right for you?</small></a>
 					<div class="row">
-						<div class="col-sm-12 multi-option">
+						<div class="col-sm-12 multi-option info">
 		        	<a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Non-polarized <span class="button-price">+$184</span></a>
 						</div>
-						<div class="col-sm-12 multi-option">
+						<div class="col-sm-12 multi-option info">
 			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Prizm Lenses <span class="button-price">+$322</span></a>
 						</div>
-						<div class="col-sm-12 multi-option">
+						<div class="col-sm-12 multi-option info">
 			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Polarized <span class="button-price">+$276</span></a>
 						</div>
-						<div class="col-sm-12 multi-option">
+						<div class="col-sm-12 multi-option info">
 			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">Transitions <span class="button-price">+$310</span></a>
 						</div>
 					</div>
@@ -246,38 +277,91 @@
 				</div>
 				
 				<!-- Tint -->
-				<div class="select">
+				<div class="select dynamic-tint-mir">
 					<h5>Tint</h5>
 					<a href="javascript:" class="help" data-toggle="modal" data-target="#tintModal"><small>Which tint is right for you?</small></a>
-					<div class="dropdown">
-						<button class="btn btn-outline-primary btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Select Lens
-							<span class="icon-chevron-down"></span>
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="javascript:">Clear Polycarbonate  A/R <span class="menu-price"> +$184.00</span></a>
-							<a class="dropdown-item" href="javascript:">Bronze <span class="menu-price"> +$230.00</span></a>
-							<a class="dropdown-item" href="javascript:">Grey <span class="menu-price"> +$230.00</span></a>
-							<a class="dropdown-item" href="javascript:">Persimmon <span class="menu-price"> +$230.00</span></a>
-							<a class="dropdown-item" href="javascript:">Black Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Emerald Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Fire Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Gold Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Ice Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Tungsten Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">VR28 Black Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Jade Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Violet Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Positive Red Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Ruby Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">24K Iridium <span class="menu-price"> +$276.00</span></a>
-							<a class="dropdown-item" href="javascript:">Sapphire Iridium <span class="menu-price"> +$276.00</span></a>
-						</div>
+					<div class="color-statches clearfix" style="margin-top: -10px;">
+						<div><img src="img/tints/3.jpg"><p>+79</p></div>
+						<div><img src="img/tints/4.jpg"><p>+79</p></div>
+						<div><img src="img/tints/5.jpg"><p>+79</p></div>
+						<div><img src="img/tints/6.jpg"><p>+79</p></div>
 					</div>
 				</div>
 				<div class="selected clearfix">
 					<h5 style="margin-bottom: 10px;">Tint</h5>
-					<p >Fire Iridium <span class="selected-price">+$140</span></p>
+					<!-- <img src="img/tints/4.jpg"> -->
+					<p>Fire Iridium <span class="selected-price">+$79</span></p>
+					<a href="javascript:">Change</a>
+				</div>
+				
+				<!-- Mirrow -->
+				<div class="select dynamic-tint-mir">
+					<h5>Mirror</h5>
+					<a href="javascript:" class="help" data-toggle="modal" data-target="#tintModal"><small>Which mirrors should you get?</small></a>
+					<div class="color-statches clearfix" style="margin-top: -10px;">
+						<div><img src="img/tints/6.jpg" style="opacity: .2;"><p>None</p></div>
+						<div><img src="img/tints/1.jpg"><p>+79</p></div>
+						<div><img src="img/tints/2.jpg"><p>+79</p></div>
+						<div><img src="img/tints/3.jpg"><p>+79</p></div>
+						<div><img src="img/tints/4.jpg"><p>+79</p></div>
+						<div><img src="img/tints/5.jpg"><p>+79</p></div>
+						<div><img src="img/tints/6.jpg"><p>+79</p></div>
+						<div><img src="img/tints/7.jpg"><p>+79</p></div>
+						<div><img src="img/tints/8.jpg"><p>+79</p></div>
+						<div><img src="img/tints/9.jpg"><p>+120</p></div>
+						<div><img src="img/tints/10.jpg"><p>+120</p></div>
+					</div>
+				</div>
+				<div class="selected clearfix">
+					<h5 style="margin-bottom: 10px;">Mirror</h5>
+					<!-- <img src="img/tints/4.jpg"> -->
+					<p>Yellow mirror <span class="selected-price">+$79</span></p>
+					<a href="javascript:">Change</a>
+				</div>
+				
+				<!-- Treatment -->
+				<div class="select">
+					<h5>Treatments</h5>
+					<a href="javascript:" class="help" data-toggle="modal" data-target="#brandModal"><small>Which lenses are right for you?</small></a>
+					<div class="row">
+						<div class="col-sm-12 multi-option info">
+		        	<a href="javascript:" class="btn btn-outline-primary btn-lg btn-block">None <span class="button-price">+$0</span></a>
+						</div>
+						<div class="col-sm-12 multi-option2 info">
+			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block clearfix">
+				        <span class="name">Premium Anti-Glare Coating</span> 
+				        <span class="button-price">+$49</span>
+				      </a>
+						</div>
+						<div class="col-sm-12 multi-option2 info">
+			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block clearfix">
+				        <span class="name">BlueShield Blue Light Coating</span> 
+				        <span class="button-price">+$79</span>
+				      </a>
+						</div>
+						<div class="col-sm-12 multi-option2 info">
+			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block clearfix">
+				        <span class="name">Transitions Clear-To-Grey</span> 
+				        <span class="button-price">+$149</span>
+				      </a>
+						</div>
+						<div class="col-sm-12 multi-option2 info">
+			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block clearfix">
+				        <span class="name">Transitions Clear-To-Brown</span> 
+				        <span class="button-price">+$149</span>
+				      </a>
+						</div>
+						<div class="col-sm-12 multi-option2 info">
+			        <a href="javascript:" class="btn btn-outline-primary btn-lg btn-block clearfix">
+				        <span class="name">Transitions XTRActive Grey</span> 
+				        <span class="button-price">+$199</span>
+				      </a>
+						</div>
+					</div>
+				</div>
+				<div class="selected clearfix">
+					<h5 style="margin-bottom: 10px;">Treatments</h5>
+					<p >Premium Anti-Glare Coating <span class="selected-price">+$49</span></p>
 					<a href="javascript:">Change</a>
 				</div>
 				
@@ -531,15 +615,82 @@ $( document ).ready(function() {
 		$(this).parent().parent().parent().next().show();		
 		$(this).parent().parent().parent().hide();	
 	});
+	
+	
+	
+	$('.color-statches div').click(function(){
+		$('.js-main-img .tint-img').show();
+		$('.js-main-img .reg-img').hide();
+		$(this).parent().parent().next().show();		
+		$(this).parent().parent().hide();
+	});
+	$('.select .multi-option2').click(function(){
+		$(this).parent().parent().next().show();		
+		$(this).parent().parent().hide();	
+	});
 	$('.select .multi-option').click(function(){
 		$(this).parent().parent().next().show();		
 		$(this).parent().parent().hide();	
 	});
 
+	$('.js-lens-select .multi-option').click(function(){
+		$('.dynamic-tint-mir').show();		
+	});
+	$('.js-brand .multi-option').click(function(){
+		$('.dynamic-lens').show();		
+	});
+
+
+
+
 	$('.selected a').click(function(){
 		$(this).parent().hide();		
 		$(this).parent().prev().show();	
 	});
+	
+	
+	/* Hovers */	
+	$('.multi-option.sing').hover(
+	  function() {
+			$('.js-main-img').hide();
+			$('.hovers.sing').show();
+	  }, function() {
+			$('.js-main-img').show();
+			$('.hovers.sing').hide();
+	  }
+	);	
+	$('.multi-option.prog').hover(
+	  function() {
+			$('.js-main-img').hide();
+			$('.hovers.prog').show();
+	  }, function() {
+			$('.js-main-img').show();
+			$('.hovers.prog').hide();
+	  }
+	);	
+	$('.color-statches div').hover(
+	  function() {
+			$('.js-main-img').hide();
+			$('.hovers.tint').show();
+	  }, function() {
+			$('.js-main-img').show();
+			$('.hovers.tint').hide();
+	  }
+	);	
+	$('.multi-option.info').hover(
+	  function() {
+			$('.info-hover').show();
+	  }, function() {
+			$('.info-hover').hide();
+	  }
+	);	
+	$('.multi-option2.info').hover(
+	  function() {
+			$('.info-hover').show();
+	  }, function() {
+			$('.info-hover').hide();
+	  }
+	);	
 		
 });
 
