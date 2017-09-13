@@ -251,6 +251,7 @@
 	.selected {
 		display: none;
 		margin-bottom: 40px;
+		i {font-style: normal;}
 		h5 {border-bottom: 1px solid $gray-300;}
 		p {float: left; margin-bottom: -5px; width: 100%;}
 		a {font-size: 14px; color: $gray-600; text-decoration: none;}
