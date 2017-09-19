@@ -182,6 +182,9 @@
 			text-align: left;
 			span {float: right; margin-top: 3px;}
 		}
+		.dropdown-toggle::after {
+			display: none;
+		}
 		.multi-option a {
 			text-align: left;
 		}
